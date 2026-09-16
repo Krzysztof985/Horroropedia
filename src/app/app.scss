@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+  min-height: 100vh;
+}
+
+app-navbar {
+  width: 200px;
+}
+
+main {
+  flex: 1;
+}
