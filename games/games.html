@@ -1,0 +1,27 @@
+<div class="games-layout">
+
+  <div class="games-content">
+    <h1>Gry</h1>
+
+    <app-work-list category="games"
+                   (workSelected)="selectedWork = $event">
+    </app-work-list>
+
+    @if (selectedReviewer) {
+    <app-review-list category="games"
+                     [title]="selectedWork"
+                     [reviewAuthor]="selectedReviewer">
+    </app-review-list>
+    }
+  </div>
+
+  @if (selectedWork) {
+  <aside>
+    <app-reviewer-list category="games"
+                       [title]="selectedWork"
+                       (reviewerSelected)="selectedReviewer = $event">
+    </app-reviewer-list>
+  </aside>
+  }
+
+</div>
