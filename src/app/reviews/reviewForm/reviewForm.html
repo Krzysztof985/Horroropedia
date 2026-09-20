@@ -1,0 +1,36 @@
+<form [formGroup]="reviewForm" (ngSubmit)="addReview()">
+
+  <label for="otherMedia">Twoje inne media społecznościowe/blogi/strony (opcjonalne)</label>
+  <input id="otherMedia"
+         type="text"
+         formControlName="otherMedia">
+
+  <label for="author">Autor/producent dzieła</label>
+  <input id="author"
+         type="text"
+         formControlName="author">
+
+  <label for="producer">Wydawca dzieła (opcjonalne)</label>
+  <input id="producer"
+         type="text"
+         formControlName="producer">
+
+  <label for="title">Tytuł</label>
+  <input id="title"
+         type="text"
+         formControlName="title">
+
+  <label for="dateOfPublication">Data wydania</label>
+  <input id="dateOfPublication"
+         type="text"
+         formControlName="dateOfPublication">
+
+  <label for="content">Treść recenzji</label>
+  <textarea id="content"
+            formControlName="content"></textarea>
+
+  <button type="submit">
+    Dodaj recenzję
+  </button>
+
+</form>

@@ -3,8 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\models"
+    "\\src\\app\\books",
+    "\\src\\app\\games",
+    "\\src\\app\\reviews",
+    "\\src\\app\\reviews\\review",
+    "\\src\\app\\reviews\\reviewerList",
+    "\\src\\app\\reviews\\reviewForm",
+    "\\src\\app\\reviews\\reviewList"
   ],
-  "SelectedNode": "\\src\\app\\models\\review.ts",
+  "SelectedNode": "\\src\\app\\games\\games.ts",
   "PreviewInSolutionExplorer": false
 }

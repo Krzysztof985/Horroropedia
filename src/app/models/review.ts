@@ -1,11 +1,11 @@
+import { Comment } from './comment';
+
 export interface Review {
   id: number;
+  workId: number,
   reviewAuthor: string;
-  dateOfPublication: string;
-  Author: string;
-  Producer?: string;
-  title: string;
+  otherMedia?: string;
+  createdAt: string;
   content: string;
-  category: string;
-  comments: string[];
+  comments: Comment[];
 }

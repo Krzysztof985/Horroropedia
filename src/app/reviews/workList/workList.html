@@ -1,0 +1,19 @@
+<div class="work-list">
+
+  <input type="text"
+         placeholder="Szukaj dzieła..."
+         [value]="searchTerm"
+         (input)="searchTerm = $any($event.target).value">
+
+  <select [(ngModel)]="sortOption">
+    <option value="titleAsc">Tytuł A–Z</option>
+    <option value="titleDesc">Tytuł Z–A</option>
+  </select>
+
+  @for (work of works; track work.id) {
+  <button (click)="selectWork(work.id)">
+    {{ work.title }}
+  </button>
+  }
+
+</div>
