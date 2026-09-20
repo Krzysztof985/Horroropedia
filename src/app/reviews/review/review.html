@@ -1,0 +1,29 @@
+<article>
+  <h2>{{ review().title }}</h2>
+
+  <p>Autor recenzji: {{ review().reviewAuthor }}</p>
+
+  <p>Inne media autora recenzji: {{ review().otherMedia }}</p>
+
+  <p>Autor dzieła: {{ review().author }}</p>
+
+  <p>Wydawca dzieła: {{ review().producer }}</p>
+
+  <p>Data powstania: {{ review().dateOfPublication }}</p>
+
+  <p>{{ review().content }}</p>
+
+  @if (showComments) {
+    @for (comment of review().comments; track comment.id) {
+      <app-comment [comment]="comment"></app-comment>
+    }
+
+    <app-comment-form (commentCreated)="addComment($event)">
+    </app-comment-form>
+  }
+
+  <button (click)="showComments = !showComments">
+    Komentarze: {{ review().comments.length }}
+  </button>
+
+</article>
