@@ -15,7 +15,9 @@ export class WorkListComponent {
   searchTerm = '';
   sortOption = 'titleAsc';
 
-  constructor(private workService: WorkService) { }
+  constructor(private workService: WorkService) {
+    this.workService.loadWorks();
+  }
 
   get works() {
     const search = this.searchTerm.trim().toLowerCase();

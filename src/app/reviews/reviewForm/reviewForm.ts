@@ -31,44 +31,9 @@ export class ReviewFormComponent {
     private workService: WorkService
   ) { }
 
-  addReview() {
-    const existingWork = this.workService.works().find(
-      work =>
-        work.title === this.reviewForm.value.title &&
-        work.category === this.category()
-    );
-
-    let workId: number;
-
-    if (existingWork) {
-      workId = existingWork.id;
-    } else {
-      const nextWorkId =
-        this.workService.works().length > 0
-          ? Math.max(...this.workService.works().map(work => work.id)) + 1
-          : 1;
-
-      const work: Work = {
-        id: nextWorkId,
-        title: this.reviewForm.value.title ?? '',
-        author: this.reviewForm.value.author ?? '',
-        producer: this.reviewForm.value.producer ?? '',
-        releaseDate: this.reviewForm.value.dateOfPublication ?? '',
-        category: this.category() ?? ''
-      };
-
-      this.workService.addWork(work);
-
-      workId = work.id;
-    }
-
-    //console.log(this.workService.works());
-    const nextId =
-      this.reviewService.reviews().length > 0
-        ? Math.max(...this.reviewService.reviews().map(review => review.id)) + 1
-        : 1;
+  createReview(workId: number) {
     const review: Review = {
-      id: nextId,
+      id: 999,
       workId: workId,
       otherMedia: this.reviewForm.value.otherMedia ?? '',
       reviewAuthor: this.userService.currentUser.nickname,
@@ -76,7 +41,46 @@ export class ReviewFormComponent {
       content: this.reviewForm.value.content ?? '',
       comments: []
     };
+
     console.log('Utworzona recenzja:', review);
-    this.reviewService.addReview(review);
+
+    this.reviewService.addReview(review).subscribe(newReview => {
+      console.log('Recenzja zwrócona przez backend:', newReview);
+
+      this.reviewService.reviews.update(reviews => [
+        ...reviews,
+        newReview
+      ]);
+    });
+  }
+
+  addReview() {
+    const existingWork = this.workService.works().find(
+      work =>
+        work.title === this.reviewForm.value.title &&
+        work.category === this.category()
+    );
+
+    if (existingWork) {
+      this.createReview(existingWork.id);
+      return;
+    }
+
+    const work: Work = {
+      id: 999,
+      title: this.reviewForm.value.title ?? '',
+      author: this.reviewForm.value.author ?? '',
+      producer: this.reviewForm.value.producer ?? '',
+      releaseDate: this.reviewForm.value.dateOfPublication ?? '',
+      category: this.category() ?? ''
+    };
+
+    this.workService.addWork(work).subscribe(newWork => {
+      console.log('Work zwrócony przez backend:', newWork);
+
+      this.workService.works.update(works => [...works, newWork]);
+
+      this.createReview(newWork.id);
+    });
   }
 }

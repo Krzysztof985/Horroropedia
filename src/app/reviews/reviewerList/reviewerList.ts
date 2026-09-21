@@ -11,7 +11,9 @@ export class ReviewerListComponent {
   workId = input<number | null>();
   reviewerSelected = output<string>();
 
-  constructor(private reviewService: ReviewService) { }
+  constructor(private reviewService: ReviewService) {
+    this.reviewService.loadReviews();
+  }
 
   get reviewers() {
     return [...new Set(
