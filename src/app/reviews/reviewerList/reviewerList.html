@@ -1,10 +1,10 @@
 <nav>
   <ul>
-    @for (reviewer of reviewers; track reviewer) {
+    @for (reviewer of reviewers; track reviewer.id) {
     <li>
       <button class="reviewer"
-              (click)="selectReviewer(reviewer)">
-        {{ reviewer }}
+              (click)="selectReviewer(reviewer.id)">
+        {{ reviewer.nick }}
       </button>
     </li>
     }

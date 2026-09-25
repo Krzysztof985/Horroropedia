@@ -1,5 +1,6 @@
 import { Component, input, output } from '@angular/core';
 import { ReviewService } from '../../services/reviewService';
+import { UserService } from '../../services/userService';
 
 @Component({
   selector: 'app-reviewer-list',
@@ -9,20 +10,28 @@ import { ReviewService } from '../../services/reviewService';
 export class ReviewerListComponent {
 
   workId = input<number | null>();
-  reviewerSelected = output<string>();
+  reviewerSelected = output<number>();
 
-  constructor(private reviewService: ReviewService) {
+  constructor(
+    private reviewService: ReviewService,
+    private userService: UserService
+  ) {
     this.reviewService.loadReviews();
   }
 
   get reviewers() {
-    return [...new Set(
+    const userIds = [...new Set(
       this.reviewService.reviews()
         .filter(review => review.workId === this.workId())
-        .map(review => review.reviewAuthor)
+        .map(review => review.userId)
     )];
+
+    return userIds
+      .map(userId => this.userService.getUserById(userId))
+      .filter(user => user !== undefined);
   }
-  selectReviewer(reviewer: string) {
-    this.reviewerSelected.emit(reviewer);
+
+  selectReviewer(userId: number) {
+    this.reviewerSelected.emit(userId);
   }
 }

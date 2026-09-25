@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\backend",
+    "\\backend\\routes",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\books",
-    "\\src\\app\\games",
-    "\\src\\app\\reviews",
+    "\\src\\app\\comments\\commentForm",
+    "\\src\\app\\registerForm",
     "\\src\\app\\reviews\\review",
-    "\\src\\app\\reviews\\reviewerList",
-    "\\src\\app\\reviews\\reviewForm",
-    "\\src\\app\\reviews\\reviewList"
+    "\\src\\app\\reviews\\reviewList",
+    "\\src\\app\\services"
   ],
-  "SelectedNode": "\\src\\app\\games\\games.ts",
+  "SelectedNode": "\\backend\\routes\\users.js",
   "PreviewInSolutionExplorer": false
 }

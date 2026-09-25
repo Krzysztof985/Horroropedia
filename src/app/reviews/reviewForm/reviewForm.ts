@@ -36,10 +36,9 @@ export class ReviewFormComponent {
       id: 999,
       workId: workId,
       otherMedia: this.reviewForm.value.otherMedia ?? '',
-      reviewAuthor: this.userService.currentUser.nickname,
+      userId: this.userService.currentUser.id,
       createdAt: new Date().toISOString(),
-      content: this.reviewForm.value.content ?? '',
-      comments: []
+      content: this.reviewForm.value.content ?? ''
     };
 
     console.log('Utworzona recenzja:', review);

@@ -1,0 +1,45 @@
+<div class="register-container">
+  <h2>Zarejestruj się</h2>
+
+  <form [formGroup]="registerForm" (ngSubmit)="register()">
+
+    <label for="nick">Nick</label>
+    <input id="nick"
+           type="text"
+           formControlName="nick">
+    @if (registerForm.controls.nick.invalid &&
+    registerForm.controls.nick.touched) {
+    <p>Nick jest wymagany.</p>
+    }
+
+    <label for="email">E-mail</label>
+    <input id="email"
+           type="email"
+           formControlName="email">
+    @if (registerForm.controls.email.hasError('required') &&
+    registerForm.controls.email.touched) {
+    <p>Email jest wymagany.</p>
+    }
+
+    @if (registerForm.controls.email.hasError('email') &&
+    registerForm.controls.email.touched) {
+    <p>Podaj poprawny adres email.</p>
+    }
+
+    <label for="password">Hasło</label>
+    <input id="password"
+           type="password"
+           formControlName="password">
+    @if (registerForm.controls.password.hasError('required') &&
+    registerForm.controls.password.touched) {
+    <p>Ustaw hasło</p>
+    }
+    @if (registerForm.controls.password.hasError('minlength')
+    && registerForm.controls.password.touched) {
+    <p>Hasło musi mieć co najmniej 8 znaków.</p>
+    }
+
+    <button type="submit">Zarejestruj się</button>
+
+  </form>
+</div>

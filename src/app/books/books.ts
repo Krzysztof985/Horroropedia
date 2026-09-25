@@ -12,6 +12,6 @@ import { ReviewFormComponent } from '../reviews/reviewForm/reviewForm'
 })
 export class Books {
   selectedWork: number | null = null;
-  selectedReviewer = '';
+  selectedReviewer: number | null = null;
   showForm = false;
 }

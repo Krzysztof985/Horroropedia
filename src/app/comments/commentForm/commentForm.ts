@@ -1,4 +1,4 @@
-import { Component, output } from '@angular/core';
+import { Component, output, input } from '@angular/core';
 import { FormControl, ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { Comment } from '../../models/comment';
 import { UserService } from '../../services/userService';
@@ -13,6 +13,9 @@ export class CommentFormComponent {
 
   content = new FormControl('');
 
+  targetType = input.required<string>();
+  targetId = input.required<number>();
+
   commentCreated = output<Comment>();
 
   constructor(
@@ -22,7 +25,9 @@ export class CommentFormComponent {
   addComment() {
     const comment: Comment = {
       id: 1,
-      author: this.userService.currentUser.nickname,
+      targetType: this.targetType(),
+      targetId: this.targetId(),
+      userId: this.userService.currentUser.id,
       content: this.content.value ?? '',
       publishedAt: new Date().toISOString()
     };

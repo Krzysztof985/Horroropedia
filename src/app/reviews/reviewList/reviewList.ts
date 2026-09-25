@@ -11,15 +11,14 @@ import { ReviewService } from '../../services/reviewService';
 export class ReviewListComponent {
 
   workId = input<number | null>();
-  reviewAuthor = input<string>();
-  sortOption = 'newest';
+  userId = input<number>();
   constructor(private reviewService: ReviewService) { }
 
   get filteredReviews() {
     return this.reviewService.reviews().filter(
       review =>
         review.workId === this.workId() &&
-        review.reviewAuthor === this.reviewAuthor()
+        review.userId === this.userId()
     );
   }
 }

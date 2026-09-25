@@ -13,6 +13,7 @@ export class ReviewService {
   loadReviews() {
     this.http.get<Review[]>('http://localhost:3000/api/reviews')
       .subscribe(reviews => {
+        console.log('Recenzje pobrane z backendu:', reviews);
         this.reviews.set(reviews);
       });
   }
@@ -22,16 +23,5 @@ export class ReviewService {
       review
     );
   }
-  addComment(reviewId: number, comment: Comment) {
-    this.reviews.update(reviews =>
-      reviews.map(review =>
-        review.id === reviewId
-          ? {
-            ...review,
-            comments: [...review.comments, comment]
-          }
-          : review
-      )
-    );
-  }
+
 }
