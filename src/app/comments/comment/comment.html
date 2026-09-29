@@ -1,7 +1,12 @@
 <article>
-  <h5>{{ user?.nick }}</h5>
 
-  <small> {{ comment().publishedAt }} </small>
+  @if (user) {
+  <h5>{{ user.nick }}</h5>
+  } @else {
+  <h5>Anonimowy użytkownik</h5>
+  }
+
+  <small>{{ comment().publishedAt }}</small>
 
   <p>{{ comment().content }}</p>
 

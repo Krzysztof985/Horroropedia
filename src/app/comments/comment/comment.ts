@@ -14,6 +14,12 @@ export class CommentComponent {
   ) { }
   comment = input.required<Comment>();
   get user() {
-    return this.userService.getUserById(this.comment().userId);
+    const userId = this.comment().userId;
+
+    if (userId === null) {
+      return undefined;
+    }
+
+    return this.userService.getUserById(userId);
   }
 }

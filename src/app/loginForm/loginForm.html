@@ -1,0 +1,30 @@
+<div class="login-container">
+  <h2>Zaloguj się</h2>
+
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+
+    <label for="login">Twój nick lub e-mail (ten, z którym zakładał*ś konto)</label>
+    <input id="login"
+           type="text"
+           formControlName="login">
+    @if (loginForm.controls.login.hasError('required')
+    && loginForm.controls.login.touched) {
+    <p>Podaj login</p>
+    }
+
+    <label for="password">Hasło</label>
+    <input id="password"
+           type="password"
+           formControlName="password">
+    @if (loginForm.controls.password.hasError('required')
+    && loginForm.controls.password.touched) {
+    <p>Podaj hasło</p>
+    }
+
+    @if (errorMessage()) {
+    <p>{{ errorMessage() }}</p>
+    }
+    <button type="submit">Zaloguj się</button>
+
+  </form>
+</div>

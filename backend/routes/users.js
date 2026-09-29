@@ -49,4 +49,39 @@ router.post('/', async (req, res) => {
   res.status(201).json(publicUser);
 });
 
+router.post('/login', async (req, res) => {
+  const { login, password } = req.body;
+
+  const user = users.find(
+    user => user.nick === login || user.email === login
+  );
+
+  if (!user) {
+    return res.status(401).json({
+      message: 'Nieprawidłowy login lub hasło.'
+    });
+  }
+
+  const passwordValid = await argon2.verify(
+    user.passwordHash,
+    password
+  );
+
+  if (!passwordValid) {
+    return res.status(401).json({
+      message: 'Nieprawidłowy login lub hasło.'
+    });
+  }
+
+  const publicUser = {
+    id: user.id,
+    nick: user.nick,
+    email: user.email,
+    dateOfJoining: user.dateOfJoining,
+    rank: user.rank
+  };
+
+  res.json(publicUser);
+});
+
 module.exports = router;

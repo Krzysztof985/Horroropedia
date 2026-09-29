@@ -1,5 +1,3 @@
-import { Comment } from './comment';
-
 export interface Review {
   id: number;
   workId: number,

@@ -38,6 +38,9 @@
     && registerForm.controls.password.touched) {
     <p>Hasło musi mieć co najmniej 8 znaków.</p>
     }
+    @if (errorMessage()) {
+    <p>{{ errorMessage() }}</p>
+    }
 
     <button type="submit">Zarejestruj się</button>
 

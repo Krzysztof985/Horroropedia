@@ -32,20 +32,20 @@ export class ReviewFormComponent {
   ) { }
 
   createReview(workId: number) {
+    if (!this.userService.currentUser()) {
+      return;
+    }
+
     const review: Review = {
       id: 999,
       workId: workId,
       otherMedia: this.reviewForm.value.otherMedia ?? '',
-      userId: this.userService.currentUser.id,
+      userId: this.userService.currentUser()!.id,
       createdAt: new Date().toISOString(),
       content: this.reviewForm.value.content ?? ''
     };
 
-    console.log('Utworzona recenzja:', review);
-
     this.reviewService.addReview(review).subscribe(newReview => {
-      console.log('Recenzja zwrócona przez backend:', newReview);
-
       this.reviewService.reviews.update(reviews => [
         ...reviews,
         newReview

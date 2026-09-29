@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\backend",
-    "\\backend\\routes",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\comments",
+    "\\src\\app\\comments\\comment",
     "\\src\\app\\comments\\commentForm",
-    "\\src\\app\\registerForm",
-    "\\src\\app\\reviews\\review",
-    "\\src\\app\\reviews\\reviewList",
-    "\\src\\app\\services"
+    "\\src\\app\\loginForm",
+    "\\src\\app\\reviews",
+    "\\src\\app\\reviews\\reviewForm"
   ],
-  "SelectedNode": "\\backend\\routes\\users.js",
+  "SelectedNode": "\\src\\app\\app.html",
   "PreviewInSolutionExplorer": false
 }

@@ -2,6 +2,7 @@ import { Injectable, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { User } from '../models/user';
 import { RegisterUser } from '../models/registerUser';
+import { LoginUser } from '../models/loginUser';
 
 @Injectable({
   providedIn: 'root'
@@ -10,13 +11,7 @@ export class UserService {
 
   users = signal<User[]>([]);
 
-  currentUser: User = {
-    id: 1,
-    nick: 'Jan',
-    email: 'jan@example.com',
-    dateOfJoining: '2026-09-01',
-    rank: 'user'
-  };
+  currentUser = signal<User | null>(null);
 
   constructor(private http: HttpClient) {
     this.loadUsers();
@@ -36,7 +31,17 @@ export class UserService {
     );
   }
 
+  loginUser(user: LoginUser) {
+    return this.http.post<User>(
+      'http://localhost:3000/api/users/login',
+      user
+    );
+  }
+
   getUserById(id: number) {
     return this.users().find(user => user.id === id);
+  }
+  logout() {
+    this.currentUser.set(null);
   }
 }

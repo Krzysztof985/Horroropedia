@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RegisterUser } from '../models/registerUser';
 import { UserService } from '../services/userService';
@@ -10,7 +10,8 @@ import { UserService } from '../services/userService';
   styleUrl: './registerForm.scss'
 })
 export class RegisterFormComponent {
-
+  errorMessage = signal('');
+  
   constructor(
     private userService: UserService
   ) { }
@@ -27,10 +28,17 @@ export class RegisterFormComponent {
       email: this.registerForm.value.email ?? '',
       password: this.registerForm.value.password ?? ''
     };
+
     if (this.registerForm.invalid) {
       return;
     }
-    this.userService.addUser(user).subscribe(newUser => {
+
+    this.userService.addUser(user).subscribe({
+      next: newUser => {
+      },
+      error: error => {
+        this.errorMessage.set(error.error.message);
+      }
     });
   }
 }

@@ -27,7 +27,7 @@ export class CommentFormComponent {
       id: 1,
       targetType: this.targetType(),
       targetId: this.targetId(),
-      userId: this.userService.currentUser.id,
+      userId: this.userService.currentUser()?.id ?? null,
       content: this.content.value ?? '',
       publishedAt: new Date().toISOString()
     };

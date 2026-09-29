@@ -2,7 +2,25 @@
 
 <main>
   <router-outlet></router-outlet>
+  @if (userService.currentUser()) {
+
+  <span class="user-nick">
+    {{ userService.currentUser()!.nick }}
+  </span>
+
+  <button class="logout-link" (click)="logout()">
+    Wyloguj się
+  </button>
+
+  } @else {
+
   <a class="register-link" href="/register">
     Zarejestruj się
   </a>
+
+  <a class="login-link" href="/login">
+    Zaloguj się
+  </a>
+
+  }
 </main>
