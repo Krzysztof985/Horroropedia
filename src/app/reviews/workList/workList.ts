@@ -40,6 +40,7 @@ export class WorkListComponent {
   }
 
   selectWork(workId: number) {
+    console.log('WorkList - wybrano dzieło:', workId);
     this.workSelected.emit(workId);
   }
 }

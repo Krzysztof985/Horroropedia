@@ -34,7 +34,9 @@
 }
 @if (showForm) {
 <section class="review-form-card">
-  <app-review-form category="games"></app-review-form>
+  <app-review-form category="games"
+                   [workId]="selectedWork">
+  </app-review-form>
 </section>
 }
 @if (showForm) {

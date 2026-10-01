@@ -1,5 +1,10 @@
-import { Component, input } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { Component, effect, input, signal } from '@angular/core';
+import {
+  FormControl,
+  FormGroup,
+  ReactiveFormsModule,
+  Validators
+} from '@angular/forms';
 import { ReviewService } from '../../services/reviewService';
 import { UserService } from '../../services/userService';
 import { Review } from '../../models/review';
@@ -14,7 +19,10 @@ import { Work } from '../../models/work'
 })
 export class ReviewFormComponent {
 
+  errorMessage = signal('');
+
   category = input<string>();
+  workId = input<number | null>(null);
 
   reviewForm = new FormGroup({
     otherMedia: new FormControl(''),
@@ -22,19 +30,49 @@ export class ReviewFormComponent {
     producer: new FormControl(''),
     title: new FormControl(''),
     dateOfPublication: new FormControl(''),
-    content: new FormControl('')
+    content: new FormControl('', Validators.required)
   });
 
   constructor(
     private reviewService: ReviewService,
     private userService: UserService,
     private workService: WorkService
-  ) { }
+  ) {
+    effect(() => {
+      const id = this.workId();
+
+      if (id === null) {
+        this.reviewForm.controls.title.enable();
+        this.reviewForm.controls.author.enable();
+        this.reviewForm.controls.producer.enable();
+        this.reviewForm.controls.dateOfPublication.enable();
+
+        return;
+      }
+
+      const work = this.workService.works().find(
+        work => work.id === id
+      );
+
+      if (!work) {
+        return;
+      }
+
+      this.reviewForm.patchValue({
+        title: work.title,
+        author: work.author,
+        producer: work.producer ?? '',
+        dateOfPublication: work.releaseDate
+      });
+
+      this.reviewForm.controls.title.disable();
+      this.reviewForm.controls.author.disable();
+      this.reviewForm.controls.producer.disable();
+      this.reviewForm.controls.dateOfPublication.disable();
+    });
+  }
 
   createReview(workId: number) {
-    if (!this.userService.currentUser()) {
-      return;
-    }
 
     const review: Review = {
       id: 999,
@@ -54,6 +92,37 @@ export class ReviewFormComponent {
   }
 
   addReview() {
+    if (!this.userService.currentUser()) {
+      this.errorMessage.set(
+        'Aby dodać recenzję, musisz być zalogowany.'
+      );
+      return;
+    }
+
+    if (this.workId() === null) {
+      this.reviewForm.controls.title.setValidators(Validators.required);
+      this.reviewForm.controls.author.setValidators(Validators.required);
+      this.reviewForm.controls.dateOfPublication.setValidators(Validators.required);
+    } else {
+      this.reviewForm.controls.title.clearValidators();
+      this.reviewForm.controls.author.clearValidators();
+      this.reviewForm.controls.dateOfPublication.clearValidators();
+    }
+
+    this.reviewForm.controls.title.updateValueAndValidity();
+    this.reviewForm.controls.author.updateValueAndValidity();
+    this.reviewForm.controls.dateOfPublication.updateValueAndValidity();
+
+    if (this.reviewForm.invalid) {
+      this.reviewForm.markAllAsTouched();
+      return;
+    }
+
+    if (this.workId() !== null) {
+      this.createReview(this.workId()!);
+      return;
+    }
+
     const existingWork = this.workService.works().find(
       work =>
         work.title === this.reviewForm.value.title &&
@@ -75,7 +144,6 @@ export class ReviewFormComponent {
     };
 
     this.workService.addWork(work).subscribe(newWork => {
-      console.log('Work zwrócony przez backend:', newWork);
 
       this.workService.works.update(works => [...works, newWork]);
 

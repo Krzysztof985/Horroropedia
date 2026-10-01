@@ -9,6 +9,11 @@
   <input id="author"
          type="text"
          formControlName="author">
+  @if (reviewForm.controls.title.hasError('required')
+  && reviewForm.controls.author.touched) {
+  <p>Podaj autora (autorów) dzieła, studio które je stworzyło, czy kogokolwiek innego kto je stworzył.</p>
+  }
+
 
   <label for="producer">Wydawca dzieła (opcjonalne)</label>
   <input id="producer"
@@ -19,18 +24,39 @@
   <input id="title"
          type="text"
          formControlName="title">
+  @if (reviewForm.controls.title.hasError('required')
+  && reviewForm.controls.title.touched) {
+  <p>Podaj tytuł dzieła.</p>
+  }
 
   <label for="dateOfPublication">Data wydania</label>
   <input id="dateOfPublication"
          type="text"
          formControlName="dateOfPublication">
+  @if (reviewForm.controls.dateOfPublication.hasError('required')
+  && reviewForm.controls.dateOfPublication.touched) {
+  <p>Podaj datę wydania dzieła. Może być sam rok jeśli trudno znaleźć dokładną.</p>
+  }
 
   <label for="content">Treść recenzji</label>
   <textarea id="content"
             formControlName="content"></textarea>
+  @if (reviewForm.controls.content.hasError('required')
+  && reviewForm.controls.content.touched) {
+  <p>Napisz recenzję dzieła.</p>
+  }
 
   <button type="submit">
     Dodaj recenzję
   </button>
+
+  @if (errorMessage()) {
+  <p>
+    {{ errorMessage() }}
+    <a href="/login">Zaloguj się</a>
+    by dodać recenzję. Nie masz konta?
+    <a href="/register">Zarejestruj się</a>.
+  </p>
+  }
 
 </form>
