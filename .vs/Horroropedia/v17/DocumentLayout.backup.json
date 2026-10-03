@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\olczk\\Horroropedia\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\olczk\\Horroropedia\\backend\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\olczk\\Horroropedia\\backend\\db.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\db.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\olczk\\Horroropedia\\src\\app\\reviews\\reviewForm\\reviewForm.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\reviews\\reviewForm\\reviewForm.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\olczk\\Horroropedia\\src\\app\\reviews\\reviewForm\\reviewForm.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\reviews\\reviewForm\\reviewForm.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\olczk\\Horroropedia\\src\\app\\games\\games.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\games\\games.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -13,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\olczk\\Horroropedia\\src\\app\\games\\games.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\games\\games.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\olczk\\Horroropedia\\src\\app\\reviews\\reviewForm\\reviewForm.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\reviews\\reviewForm\\reviewForm.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\olczk\\Horroropedia\\src\\app\\reviews\\reviewForm\\reviewForm.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\reviews\\reviewForm\\reviewForm.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\olczk\\Horroropedia\\src\\app\\reviews\\workList\\workList.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
@@ -85,10 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\olczk\\Horroropedia\\backend\\routes\\users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\routes\\users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\olczk\\Horroropedia\\backend\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\olczk\\Horroropedia\\backend\\routes\\reviews.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -214,37 +218,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "userService.ts",
-              "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\services\\userService.ts",
-              "RelativeDocumentMoniker": "src\\app\\services\\userService.ts",
-              "ToolTip": "C:\\Users\\olczk\\Horroropedia\\src\\app\\services\\userService.ts",
-              "RelativeToolTip": "src\\app\\services\\userService.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2026-09-18T10:02:17.428Z",
+              "DocumentIndex": 1,
+              "Title": "db.js",
+              "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\backend\\db.js",
+              "RelativeDocumentMoniker": "backend\\db.js",
+              "ToolTip": "C:\\Users\\olczk\\Horroropedia\\backend\\db.js",
+              "RelativeToolTip": "backend\\db.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-10-01T12:25:01.267Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "reviewForm.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\reviews\\reviewForm\\reviewForm.ts",
               "RelativeDocumentMoniker": "src\\app\\reviews\\reviewForm\\reviewForm.ts",
               "ToolTip": "C:\\Users\\olczk\\Horroropedia\\src\\app\\reviews\\reviewForm\\reviewForm.ts",
               "RelativeToolTip": "src\\app\\reviews\\reviewForm\\reviewForm.ts",
-              "ViewState": "AgIAACgAAAAAAAAAAAAgwEIAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAQwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2026-09-23T13:02:53.391Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "app.html",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\app.html",
               "RelativeDocumentMoniker": "src\\app\\app.html",
@@ -252,12 +256,11 @@
               "RelativeToolTip": "src\\app\\app.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-09-15T12:31:15.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-15T12:31:15.962Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "app.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\app.ts",
               "RelativeDocumentMoniker": "src\\app\\app.ts",
@@ -269,20 +272,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "reviewForm.html",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\reviews\\reviewForm\\reviewForm.html",
               "RelativeDocumentMoniker": "src\\app\\reviews\\reviewForm\\reviewForm.html",
               "ToolTip": "C:\\Users\\olczk\\Horroropedia\\src\\app\\reviews\\reviewForm\\reviewForm.html",
               "RelativeToolTip": "src\\app\\reviews\\reviewForm\\reviewForm.html",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-09-23T13:02:44.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T13:02:44.749Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "review.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\models\\review.ts",
               "RelativeDocumentMoniker": "src\\app\\models\\review.ts",
@@ -290,12 +292,11 @@
               "RelativeToolTip": "src\\app\\models\\review.ts",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2026-09-23T12:20:42.518Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T12:20:42.518Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "work.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\models\\work.ts",
               "RelativeDocumentMoniker": "src\\app\\models\\work.ts",
@@ -303,12 +304,11 @@
               "RelativeToolTip": "src\\app\\models\\work.ts",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2026-09-20T14:13:00.485Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-20T14:13:00.485Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "reviewList.html",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\reviews\\reviewList\\reviewList.html",
               "RelativeDocumentMoniker": "src\\app\\reviews\\reviewList\\reviewList.html",
@@ -316,12 +316,11 @@
               "RelativeToolTip": "src\\app\\reviews\\reviewList\\reviewList.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-09-23T13:18:29.728Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T13:18:29.728Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "reviewerList.html",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\reviews\\reviewerList\\reviewerList.html",
               "RelativeDocumentMoniker": "src\\app\\reviews\\reviewerList\\reviewerList.html",
@@ -329,12 +328,11 @@
               "RelativeToolTip": "src\\app\\reviews\\reviewerList\\reviewerList.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-09-23T13:13:45.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T13:13:45.911Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "games.html",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\games\\games.html",
               "RelativeDocumentMoniker": "src\\app\\games\\games.html",
@@ -342,12 +340,11 @@
               "RelativeToolTip": "src\\app\\games\\games.html",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-09-20T14:58:38.144Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-20T14:58:38.144Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "workList.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\reviews\\workList\\workList.ts",
               "RelativeDocumentMoniker": "src\\app\\reviews\\workList\\workList.ts",
@@ -355,12 +352,11 @@
               "RelativeToolTip": "src\\app\\reviews\\workList\\workList.ts",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwCoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2026-09-21T11:21:23.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T11:21:23.848Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "books.html",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\books\\books.html",
               "RelativeDocumentMoniker": "src\\app\\books\\books.html",
@@ -368,12 +364,36 @@
               "RelativeToolTip": "src\\app\\books\\books.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-09-23T13:47:07.36Z",
+              "WhenOpened": "2026-09-23T13:47:07.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "server.js",
+              "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\backend\\server.js",
+              "RelativeDocumentMoniker": "backend\\server.js",
+              "ToolTip": "C:\\Users\\olczk\\Horroropedia\\backend\\server.js",
+              "RelativeToolTip": "backend\\server.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-09-21T10:07:32.846Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
+              "Title": "userService.ts",
+              "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\services\\userService.ts",
+              "RelativeDocumentMoniker": "src\\app\\services\\userService.ts",
+              "ToolTip": "C:\\Users\\olczk\\Horroropedia\\src\\app\\services\\userService.ts",
+              "RelativeToolTip": "src\\app\\services\\userService.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-09-18T10:02:17.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "games.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\games\\games.ts",
               "RelativeDocumentMoniker": "src\\app\\games\\games.ts",
@@ -381,12 +401,11 @@
               "RelativeToolTip": "src\\app\\games\\games.ts",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2026-09-20T15:07:57.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-20T15:07:57.651Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "app.scss",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\app.scss",
               "RelativeDocumentMoniker": "src\\app\\app.scss",
@@ -398,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "comment.html",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\comments\\comment\\comment.html",
               "RelativeDocumentMoniker": "src\\app\\comments\\comment\\comment.html",
@@ -410,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "comment.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\comments\\comment\\comment.ts",
               "RelativeDocumentMoniker": "src\\app\\comments\\comment\\comment.ts",
@@ -422,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "comment.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\models\\comment.ts",
               "RelativeDocumentMoniker": "src\\app\\models\\comment.ts",
@@ -434,7 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "commentForm.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\comments\\commentForm\\commentForm.ts",
               "RelativeDocumentMoniker": "src\\app\\comments\\commentForm\\commentForm.ts",
@@ -446,7 +465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "users.js",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\backend\\routes\\users.js",
               "RelativeDocumentMoniker": "backend\\routes\\users.js",
@@ -458,19 +477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "server.js",
-              "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\backend\\server.js",
-              "RelativeDocumentMoniker": "backend\\server.js",
-              "ToolTip": "C:\\Users\\olczk\\Horroropedia\\backend\\server.js",
-              "RelativeToolTip": "backend\\server.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-09-21T10:07:32.846Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "loginForm.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\loginForm\\loginForm.ts",
               "RelativeDocumentMoniker": "src\\app\\loginForm\\loginForm.ts",
@@ -482,7 +489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "loginForm.html",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\loginForm\\loginForm.html",
               "RelativeDocumentMoniker": "src\\app\\loginForm\\loginForm.html",
@@ -494,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "reviews.js",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\backend\\routes\\reviews.js",
               "RelativeDocumentMoniker": "backend\\routes\\reviews.js",
@@ -506,7 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "registerUser.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\models\\registerUser.ts",
               "RelativeDocumentMoniker": "src\\app\\models\\registerUser.ts",
@@ -518,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "user.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\models\\user.ts",
               "RelativeDocumentMoniker": "src\\app\\models\\user.ts",
@@ -530,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "registerForm.scss",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\registerForm\\registerForm.scss",
               "RelativeDocumentMoniker": "src\\app\\registerForm\\registerForm.scss",
@@ -542,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "app.routes.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\app.routes.ts",
               "RelativeDocumentMoniker": "src\\app\\app.routes.ts",
@@ -554,7 +561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "registerForm.html",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\registerForm\\registerForm.html",
               "RelativeDocumentMoniker": "src\\app\\registerForm\\registerForm.html",
@@ -566,7 +573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "registerForm.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\registerForm\\registerForm.ts",
               "RelativeDocumentMoniker": "src\\app\\registerForm\\registerForm.ts",
@@ -578,7 +585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "loginUser.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\models\\loginUser.ts",
               "RelativeDocumentMoniker": "src\\app\\models\\loginUser.ts",
@@ -590,7 +597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "loginForm.scss",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\loginForm\\loginForm.scss",
               "RelativeDocumentMoniker": "src\\app\\loginForm\\loginForm.scss",
@@ -602,7 +609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "app.routes.server.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\app.routes.server.ts",
               "RelativeDocumentMoniker": "src\\app\\app.routes.server.ts",
@@ -614,7 +621,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "commentForm.html",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\comments\\commentForm\\commentForm.html",
               "RelativeDocumentMoniker": "src\\app\\comments\\commentForm\\commentForm.html",
@@ -626,7 +633,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "users.js",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\backend\\data\\users.js",
               "RelativeDocumentMoniker": "backend\\data\\users.js",
@@ -638,7 +645,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "comments.js",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\backend\\data\\comments.js",
               "RelativeDocumentMoniker": "backend\\data\\comments.js",
@@ -650,7 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "comments.js",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\backend\\routes\\comments.js",
               "RelativeDocumentMoniker": "backend\\routes\\comments.js",
@@ -662,7 +669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "works.js",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\backend\\routes\\works.js",
               "RelativeDocumentMoniker": "backend\\routes\\works.js",
@@ -674,7 +681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "review.html",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\reviews\\review\\review.html",
               "RelativeDocumentMoniker": "src\\app\\reviews\\review\\review.html",
@@ -686,7 +693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "review.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\reviews\\review\\review.ts",
               "RelativeDocumentMoniker": "src\\app\\reviews\\review\\review.ts",
@@ -698,7 +705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "reviewService.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\services\\reviewService.ts",
               "RelativeDocumentMoniker": "src\\app\\services\\reviewService.ts",
@@ -710,7 +717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "reviewerList.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\reviews\\reviewerList\\reviewerList.ts",
               "RelativeDocumentMoniker": "src\\app\\reviews\\reviewerList\\reviewerList.ts",
@@ -722,7 +729,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "reviewList.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\reviews\\reviewList\\reviewList.ts",
               "RelativeDocumentMoniker": "src\\app\\reviews\\reviewList\\reviewList.ts",
@@ -734,7 +741,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "commentService.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\services\\commentService.ts",
               "RelativeDocumentMoniker": "src\\app\\services\\commentService.ts",
@@ -746,7 +753,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "books.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\books\\books.ts",
               "RelativeDocumentMoniker": "src\\app\\books\\books.ts",
@@ -758,7 +765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "reviews.js",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\backend\\data\\reviews.js",
               "RelativeDocumentMoniker": "backend\\data\\reviews.js",
@@ -770,7 +777,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "workService.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\services\\workService.ts",
               "RelativeDocumentMoniker": "src\\app\\services\\workService.ts",
@@ -782,7 +789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "works.js",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\backend\\data\\works.js",
               "RelativeDocumentMoniker": "backend\\data\\works.js",
@@ -794,7 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "app.spec.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\app.spec.ts",
               "RelativeDocumentMoniker": "src\\app\\app.spec.ts",
@@ -806,7 +813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "app.config.ts",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\app.config.ts",
               "RelativeDocumentMoniker": "src\\app\\app.config.ts",
@@ -818,7 +825,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "reviewForm.scss",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\reviews\\reviewForm\\reviewForm.scss",
               "RelativeDocumentMoniker": "src\\app\\reviews\\reviewForm\\reviewForm.scss",
@@ -830,7 +837,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "reviewerList.scss",
               "DocumentMoniker": "C:\\Users\\olczk\\Horroropedia\\src\\app\\reviews\\reviewerList\\reviewerList.scss",
               "RelativeDocumentMoniker": "src\\app\\reviews\\reviewerList\\reviewerList.scss",

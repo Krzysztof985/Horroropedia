@@ -1,25 +1,60 @@
 const express = require('express');
-const comments = require('../data/comments');
+const pool = require('../db');
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  res.json(comments);
+router.get('/', async (req, res) => {
+  const result = await pool.query(`
+    SELECT
+      id,
+      target_type AS "targetType",
+      target_id AS "targetId",
+      user_id AS "userId",
+      content,
+      published_at AS "publishedAt"
+    FROM comments
+  `);
+
+  res.json(result.rows);
 });
 
-router.post('/', (req, res) => {
-  const newId = comments.length > 0
-    ? Math.max(...comments.map(comment => comment.id)) + 1
-    : 1;
+router.post('/', async (req, res) => {
+  const {
+    targetType,
+    targetId,
+    userId,
+    content,
+    publishedAt
+  } = req.body;
 
-  const newComment = {
-    ...req.body,
-    id: newId
-  };
+  const result = await pool.query(
+    `
+      INSERT INTO comments (
+        target_type,
+        target_id,
+        user_id,
+        content,
+        published_at
+      )
+      VALUES ($1, $2, $3, $4, $5)
+      RETURNING
+        id,
+        target_type AS "targetType",
+        target_id AS "targetId",
+        user_id AS "userId",
+        content,
+        published_at AS "publishedAt"
+    `,
+    [
+      targetType,
+      targetId,
+      userId ?? null,
+      content,
+      publishedAt
+    ]
+  );
 
-  comments.push(newComment);
-
-  res.status(201).json(newComment);
+  res.status(201).json(result.rows[0]);
 });
 
 module.exports = router;

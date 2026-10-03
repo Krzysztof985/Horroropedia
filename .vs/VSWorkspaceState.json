@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\backend",
+    "\\backend\\data",
+    "\\backend\\routes",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\home",
     "\\src\\app\\reviews",
-    "\\src\\app\\reviews\\review",
-    "\\src\\app\\reviews\\reviewerList",
     "\\src\\app\\reviews\\reviewForm",
     "\\src\\app\\reviews\\reviewList",
     "\\src\\app\\reviews\\workList"
   ],
-  "SelectedNode": "\\src\\app\\reviews\\reviewForm\\reviewForm.ts",
+  "SelectedNode": "\\src\\app\\home\\home.ts",
   "PreviewInSolutionExplorer": false
 }
